@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Navbar from '@/components/Navbar'
+import './globals.css'
 
 export default function Home() {
   return (
-    <main>
-      <h1 className='text-white text-7xl'>Test Font</h1>
+    <main className='width-full h-screen bg-bodyColor font-bodyFont text-textLight overflow-x-hidden overflow-y-scroll'>
+      <Navbar />
     </main>
   )
 }
