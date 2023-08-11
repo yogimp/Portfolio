@@ -3,9 +3,9 @@
 import React from 'react'
 import '@/app/globals.css'
 import Image from 'next/image'
-import { logo } from '../../public/assets/index'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { logo } from '../../public'
 
 const Navbar = () => {
     return (
