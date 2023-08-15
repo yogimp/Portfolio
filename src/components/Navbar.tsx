@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useRef } from 'react'
 import '@/app/globals.css'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,6 +8,25 @@ import { motion } from 'framer-motion'
 import { logo } from '../../public'
 
 const Navbar = () => {
+    
+    const ref = useRef<string | any>("");
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault();
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+            behavior: "smooth"
+        })
+        // update the class name of the click link
+        const links = document.querySelectorAll('.nav-link')
+        links.forEach(link => {
+            link.classList.remove("active")
+        })
+        e.currentTarget.classList.add("active")
+    }
+
     return (
         <div className='w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4'>
             <div className='max-w-container h-full mx-auto py-1 flex items-center justify-between font-titleFont'>
@@ -16,20 +35,60 @@ const Navbar = () => {
                 </motion.div>
                 <div className='hidden mdl:inline-flex items-center gap-7'>
                     <ul className='flex text[13px] gap-7'>
-                        <Link href="#home" className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 n '>
-                            <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1 }}>Home</motion.li>
+                        <Link 
+                            href="#home"
+                            onClick={handleScroll} 
+                            className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 n '>
+                            <motion.li 
+                                initial={{ y: -10, opacity: 0 }} 
+                                animate={{ y: 0, opacity: 1 }} 
+                                transition={{ duration: 0.1 }}>
+                                    Home
+                            </motion.li>
                         </Link>
-                        <Link href="#about" className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
-                            <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>About</motion.li>
+                        <Link 
+                            href="#about" 
+                            onClick={handleScroll} 
+                            className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
+                            <motion.li 
+                                initial={{ y: -10, opacity: 0 }} 
+                                animate={{ y: 0, opacity: 1 }} 
+                                transition={{ duration: 0.1, delay: 0.1 }}>
+                                    About
+                                </motion.li>
                         </Link>
-                        <Link href="#experience" className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
-                            <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>Experience</motion.li>
+                        <Link 
+                            href="#experience" 
+                            onClick={handleScroll}
+                            className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
+                            <motion.li 
+                                initial={{ y: -10, opacity: 0 }} 
+                                animate={{ y: 0, opacity: 1 }} 
+                                transition={{ duration: 0.1, delay: 0.1 }}>
+                                    Experience
+                                </motion.li>
                         </Link>
-                        <Link href="#project" className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
-                            <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>Project</motion.li>
+                        <Link 
+                            href="#project"
+                            onClick={handleScroll} 
+                            className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
+                            <motion.li 
+                                initial={{ y: -10, opacity: 0 }} 
+                                animate={{ y: 0, opacity: 1 }} 
+                                transition={{ duration: 0.1, delay: 0.1 }}>
+                                    Project
+                                </motion.li>
                         </Link>
-                        <Link href="#contact" className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
-                            <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.4 }}>Contact</motion.li>
+                        <Link 
+                            href="#contact" 
+                            onClick={handleScroll} 
+                            className=' flex item-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link'>
+                            <motion.li 
+                                initial={{ y: -10, opacity: 0 }} 
+                                animate={{ y: 0, opacity: 1 }} 
+                                transition={{ duration: 0.1, delay: 0.4 }}>
+                                    Contact
+                            </motion.li>
                         </Link>
                     </ul>
                     <a href="/assets/resume.pdf" target='_blank'>
