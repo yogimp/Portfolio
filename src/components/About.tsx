@@ -10,20 +10,21 @@ const About = () => {
             <div className="flex flex-col lgl:flex-row gap-16">
                 <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
                     <p>
-                        Hello! My name is Yogi Meizal Putra and I enjoy creating thing that live on the internet.My interest in Web and Mobile Development started back in 2016 when i decided to try making e-commerce using wordpress - turn out design and develop UI/UX tought me alot about HTML & CSS!
+                        Hello! My name is Yogi Meizal Putra and I enjoy creating thing that live on the internet. My interest in Web and Mobile Development started back in 2016 when i decided to try making e-commerce using wordpress - turn out design and develop UI/UX tought me alot about HTML & CSS!
                     </p>
                     <p>
-                        Fast-forward to today, and I had privilege of working at an software agency, a start-up,{""}
+                        Fast-forward to today, and I had privilege of working at an software agency, a start-up,{" "}
                         <span className="text-textGreen">
                             a huge corporation, and a student-led design studio.
-                        </span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates impedit expedita molestiae architecto itaque.{" "}
-                        <span className="text-textGreen">
-                            ab natus possimus? Sint, accumasamus!
-                        </span>
+                        </span>{" "}
+                        I am committed to continuously learning and keeping up with the latest advancements in web and mobile technology. with a deep love for creating 
+                        <span className="text-textGreen"> {" "}
+                            visually appealing and user-friendly 
+                        </span>{" "}
+                        websites.
                     </p>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur perspiciatis ea consequatur corrupti voluptatibus facilis minima. Deleniti dignissimos, officia voluptatibus quos laudantium blanditiis doloribus.
+                        With a keen eye for design and a strong technical background, I strive to craft seamless digital experiences that leave a lasting impression on users. Eagerly embrace new challenges, seeking opportunities to grow both personally and professionally.
                     </p>
                     <p>
                         Here are few technologies I have been working with recently :
@@ -76,6 +77,18 @@ const About = () => {
                         <li className="flex items-center gap-2">
                             <span className="text-textGreen"><AiFillThunderbolt /></span>
                             Flutter
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen"><AiFillThunderbolt /></span>
+                            Figma
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen"><AiFillThunderbolt /></span>
+                            Adobe XD
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen"><AiFillThunderbolt /></span>
+                            Postgresql
                         </li>
                     </ul>
                 </div>

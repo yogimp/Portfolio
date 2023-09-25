@@ -1,5 +1,6 @@
 import { TbBrandGithub } from 'react-icons/tb'
-import { SlSocialYoutube, SlSocialLinkedin, SlSocialFacebook, SlSocialInstagram  } from 'react-icons/sl'
+import { SiFreelancer } from 'react-icons/si'
+import { SlSocialYoutube, SlSocialLinkedin, SlSocialInstagram  } from 'react-icons/sl'
 
 const Footer = () => {
     return (
@@ -19,10 +20,10 @@ const Footer = () => {
                     <SlSocialLinkedin />
                 </span>
             </a>
-            <a href="https://github.com/yogimp" target='_blank'>
-                <span className='w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                    <SlSocialFacebook />
-                </span>
+            <a href="https://www.freelancer.com/u/yogimeizalputra" target='_blank'>
+                    <span className='w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
+                        <SiFreelancer />
+                    </span>
             </a>
             <a href="https://www.instagram.com/yogimeizal/" target='_blank'>
                 <span className='w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>

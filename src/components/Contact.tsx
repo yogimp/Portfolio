@@ -12,7 +12,7 @@ const Contact = () => {
             <p className='max-w-[600px] text-center text-textDark'>
                 I always open for any new opportunities, consultation or about project. My inbox is always open whether you have question or just say hi, I will try my best to get back to you!
             </p>
-            <a href="yogimeizalputra@gmail.com">
+            <a href="yogimeizalputra@gmail.com" target='_blank'>
                 <button className='w-40 h-12 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300'>Say Hello</button>
             </a>
         </section>

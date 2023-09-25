@@ -7,7 +7,7 @@ const Archive = () => {
     const [showMore, setShowMore] = useState(false);
 
     return (
-        <div className='max-w-contentContainer mx-auto px-4 py-24'>
+        <div className='max-w-contentContainer mx-auto px-4 py-24 archive'>
             <div className='w-full flex flex-col items-center'>
                 <h2 className='text-3xl font-titleFont font-semibold'>
                     Other Noteworthy Projects
@@ -18,22 +18,22 @@ const Archive = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
                 <ArchiveCard 
-                    title= 'Educare English Learning Academy' 
-                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                    link= "https://www.englishlearningacademy.com"
+                    title= 'Pizza-Town' 
+                    des= 'Pizza Town is an online ordering web application that makes it easy for users to order online and deliver quickly. This web application was created using PHP and MYSQL database management system.' 
+                    listItem= {["PHP", "Bootstrap", "MySql"]} 
+                    link= "https://github.com/yogimp/Pizza-Town"
                 />
                 <ArchiveCard 
-                    title= 'Educare English Learning Academy' 
-                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                    link= "https://www.englishlearningacademy.com"
+                    title= 'Monster-Chase' 
+                    des= 'Monster Chase is a personal game project that I created. This is just a simple game that I made using C# language and is very fun to play. In the future I will make this game have many features and levels of play.' 
+                    listItem= {["C#", "Unity", "Vscode"]} 
+                    link= "https://github.com/yogimp/Monster-Chase"
                 />
                 <ArchiveCard 
-                    title= 'Educare English Learning Academy' 
-                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                    link= "https://www.englishlearningacademy.com"
+                    title= 'Trouvel-Apps' 
+                    des= 'Travel application especially for mobile. This project create using flutter so user Iphone or Android can use it, a very attractive appearance and is user friendly so that users can easily book via phone or tablet.' 
+                    listItem= {["Flutter", "Dart", "Swift"]} 
+                    link= "https://github.com/yogimp/Trouvel-Apps"
                 />
                 {
                     showMore && (
@@ -44,10 +44,10 @@ const Archive = () => {
                                 transition={{ delay: 0.1 }}
                             >
                                 <ArchiveCard 
-                                    title= 'Educare English Learning Academy' 
-                                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                                    link= "https://www.englishlearningacademy.com"
+                                    title= 'Lama-Shop' 
+                                    des= 'E-Commerce Clothing Website that user can be order and payment via online. This website responsive even a user using mobile phone can easyly using this website throught a browser.' 
+                                    listItem= {["ReactJS", "ExpressJS", "MongoDB"]} 
+                                    link= "https://github.com/yogimp/Lama-Shop"
                                 />
                             </motion.div>
                             <motion.div
@@ -56,10 +56,10 @@ const Archive = () => {
                                 transition={{ delay: 0.2 }}
                             >
                                 <ArchiveCard 
-                                    title= 'Educare English Learning Academy' 
-                                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                                    link= "https://www.englishlearningacademy.com"
+                                    title= 'Omnifood' 
+                                    des= 'Premium Website Delivery Services Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.' 
+                                    listItem= {["Javascript", "HTML", "CSS"]} 
+                                    link= "https://github.com/yogimp/Omnifood"
                                 />
                             </motion.div>
                             <motion.div
@@ -68,10 +68,10 @@ const Archive = () => {
                                 transition={{ delay: 0.3 }}
                             >
                                 <ArchiveCard 
-                                    title= 'Educare English Learning Academy' 
-                                    des= 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem adipisci nisi velit corrupti mollitia harum alias sed architecto? Quibusdam!' 
-                                    listItem= {["Nextjs", "Tailwindcss", "Getform.io"]} 
-                                    link= "https://www.englishlearningacademy.com"
+                                    title= 'Dinner-Dash' 
+                                    des= 'Diner Dash is like an other project im usually make but this time im using Laravel as Framework, this web app is simple UI so user can get a fast and better performance.' 
+                                    listItem= {["Laravel", "PHP", "Blade"]} 
+                                    link= "https://github.com/yogimp/Dinner-Dash"
                                 />
                             </motion.div>
                         </>
