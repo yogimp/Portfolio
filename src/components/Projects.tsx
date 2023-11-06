@@ -43,7 +43,7 @@ const Projects = () => {
                                 <a href="" className='hover:text-textGreen duration-300'>
                                     <AiOutlineYoutube />
                                 </a>
-                                <a href="" className='hover:text-textGreen duration-300'>
+                                <a href="https://www.pepenerobali.com/" className='hover:text-textGreen duration-300'>
                                     <RxOpenInNewWindow/>
                                 </a>
                             </div>
@@ -53,7 +53,7 @@ const Projects = () => {
                 {/* {Project Two} */}
                 <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
                     <div className='flex flex-col xl:flex-row-reverse gap-6'>
-                        <a href="https://www.musixmatch.com/" target='_blank' className='w-full xl:w-1/2 h-auto relative group'>
+                        <a href="https://zaltadmin-dashboard.vercel.app/" target='_blank' className='w-full xl:w-1/2 h-auto relative group'>
                             <div>
                                 <Image className='w-full h-full object-contain' src={zaltadmin} alt='musixmatch'/>
                             </div>
@@ -82,7 +82,7 @@ const Projects = () => {
                                 <a href="" className='hover:text-textGreen duration-300'>
                                     <AiOutlineYoutube />
                                 </a>
-                                <a href="" className='hover:text-textGreen duration-300'>
+                                <a href="https://zaltadmin-dashboard.vercel.app/" className='hover:text-textGreen duration-300'>
                                     <RxOpenInNewWindow/>
                                 </a>
                             </div>
@@ -121,7 +121,7 @@ const Projects = () => {
                                 <a href="" className='hover:text-textGreen duration-300'>
                                     <AiOutlineYoutube />
                                 </a>
-                                <a href="" className='hover:text-textGreen duration-300'>
+                                <a href="https://www.booking.com/" className='hover:text-textGreen duration-300'>
                                     <RxOpenInNewWindow/>
                                 </a>
                             </div>
