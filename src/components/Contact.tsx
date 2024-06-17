@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <section id='contact' className='max-w-contentContainer mx-auto py-10 xl:py32 flex flex-col gap-4 items-center justify-center'>
+        <section id='contact' className='max-w-contentContainer mx-auto h-screen py-10 xl:py32 flex flex-col gap-4 items-center justify-center'>
             <p className='font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide'>
                 Whats Next?
             </p>

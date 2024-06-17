@@ -12,8 +12,7 @@ const Banner = () => {
     })
 
     return (
-        <section id='home' className='max-w-contentContainer mx-auto py-10 mdl:py-24 px-10 flex flex-col gap-4
-        lgl:gap-8 xl:px-4'>
+        <section id='home' className='max-w-contentContainer mx-auto h-[96vh]  px-10 flex flex-col gap-4 justify-center mdl:py-24 lgl:gap-8 xl:px-4'>
             <motion.h3 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }} className='text-lg font-titleFont tracking-wide uppercase'>
                 Welcome to my world
             </motion.h3>
