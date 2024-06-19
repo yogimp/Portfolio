@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-.body {
-    font-family: var(--body-font);
-    background-color: black;
+.active {
+    color: #64ffda
 }

@@ -1,4 +1,3 @@
-import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 
@@ -12,7 +11,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'YMP | Portfolio',
   description: 'My portfolio website',
 }
 
@@ -23,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${montserrat.variable} ${'body'}`}>
+      <body className={`${inter.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>
